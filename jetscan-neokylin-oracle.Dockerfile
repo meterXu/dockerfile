@@ -1,5 +1,5 @@
 FROM docker.io/98weiting09/nkas6.5
-MAINTAINER meterxu
+MAINTAINER isaac
 
 RUN cd /etc/yum.repos.d \ 
 && wget -O CentOS-Base.repo http://192.168.12.105/zj/Centos-6.repo \

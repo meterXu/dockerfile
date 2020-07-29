@@ -1,5 +1,5 @@
 FROM docker.io/roman8422/centos6.5
-MAINTAINER meterxu
+MAINTAINER isaac
 
 RUN TZ='Asia/Shanghai'; export TZ \
 && sed -i '$i /10 * * * * ntpdate ntp.api.bz' /etc/crontab \
