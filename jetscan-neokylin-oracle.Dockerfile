@@ -1,6 +1,8 @@
 FROM docker.io/98weiting09/nkas6.5
 MAINTAINER isaac
 
+# 包资源地址 http://7u.isaacxu.com/zj.7z
+
 RUN cd /etc/yum.repos.d \ 
 && wget -O CentOS-Base.repo http://192.168.12.105/zj/Centos-6.repo \
 && yum clean all \

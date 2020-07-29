@@ -1,6 +1,8 @@
 FROM docker.io/roman8422/centos6.5
 MAINTAINER isaac
 
+# 包资源地址 http://7u.isaacxu.com/zj.7z
+
 RUN TZ='Asia/Shanghai'; export TZ \
 && sed -i '$i /10 * * * * ntpdate ntp.api.bz' /etc/crontab \
 && yum install -y gcc wget tar apr-devel apr-util-devel pkgconfig expat-devel cyrus-sasl-devel openldap-devel zlib-devel pcre* libxml2* m4* autoconf* libjpeg* libpng-devel freetype-devel \
